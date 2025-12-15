@@ -3,7 +3,7 @@ const app = express();
 const path = require("path");
 const portNumber = 7004;
 const bodyParser = require("body-parser");
-
+const lyricsRouter = require("./routes/lyric")
 const mongoose = require("mongoose");
 // require("dotenv").config({
 //     path: path.resolve(__dirname, "credentialsDontPost/.env"),
