@@ -47,5 +47,10 @@ router.get("/history/:id", async (req,res)=>{
     res.render("entry", {entry});
 })
 
+router.post("/history/clear", async(req, res) =>{
+    await LyricEntry.deleteMany({});
+    res.redirect("history")
+});
+
 module.exports = router;
 
