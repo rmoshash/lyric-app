@@ -16,7 +16,7 @@ app.set("views", path.resolve(__dirname, "templates"));
 
 mongoose.connect(process.env.MONGO_CONNECTION_STRING)
 .then(()=> console.log("Mongo connected"))
-.catch(err => console.error("Mongo error: ", err.message));
+.catch(err => console.error("Mongo error: ", err));
 
 app.use('/', lyricsRouter);
 app.listen(portNumber)

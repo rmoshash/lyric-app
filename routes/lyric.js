@@ -13,7 +13,7 @@ router.post("/lyrics", async (req, res) => {
     const artist = (req.body.artist || "").trim();
 
     if(!artist || !title){
-        res.status(400);
+        res.status(404);
         return res.render("result", {error: "Need to enter both title & artist", entry: null});
     }
 
