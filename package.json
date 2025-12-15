@@ -1,0 +1,20 @@
+{
+  "name": "lyricapp",
+  "version": "1.0.0",
+  "description": "Submitted by: Raha Moshasha (rmoshash) Group Members: Raha Moshasha (rmoshash) App Description: Allows users to find, and store song lyrics YouTube video link:  APIs: Lyrics.ovh: (https://lyricsovh.docs.apiary.io/)",
+  "homepage": "https://github.com/rmoshash/lyric-app#readme",
+  "bugs": {
+    "url": "https://github.com/rmoshash/lyric-app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmoshash/lyric-app.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "LyricSystem.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
