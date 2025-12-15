@@ -19,4 +19,4 @@ mongoose.connect(process.env.MONGO_CONNECTION_STRING)
 .catch(err => console.error("Mongo error: ", err.message));
 
 app.use('/', lyricsRouter);
-app.listen(port)
+app.listen(portNumber)
