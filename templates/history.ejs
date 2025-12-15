@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="/styles.css">
+    <title>History</title>
+</head>
+
+<body>
+    <div class="display">
+        <p><a href="/">Home</a></p>
+        <h2>Saved Lyrics Searches</h2>
+        <ul>
+            <% entries.forEach(e => { %> 
+                <li>
+                    <a href="/history/<%= e._id %>"><%= e.artist%> - <%= e.title %></a>
+                    <p class="date">(<%= e.createdDate.toDateString() %>)</p>
+                </li>
+
+            <% }) %>
+        </ul>
+    </div>
+</body>
+</html>

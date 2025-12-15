@@ -1,0 +1,22 @@
+const express = require("express");
+const app = express();
+const path = require("path");
+const portNumber = 7004;
+const bodyParser = require("body-parser");
+
+const mongoose = require("mongoose");
+require("dotenv").config({
+    path: path.resolve(__dirname, "credentialsDontPost/.env"),
+ });
+ 
+app.use(bodyParser.urlencoded({ extended: false }));
+app.set("view engine", "ejs");
+app.set("views", path.resolve(__dirname, "templates"));
+
+
+mongoose.connect(process.env.MONGO_CONNECTION_STRING)
+.then(()=> console.log("Mongo connected"))
+.catch(err => console.error("Mongo error: ", err.message));
+
+app.use('/', lyricsRouter);
+app.listen(port)

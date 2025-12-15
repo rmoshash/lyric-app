@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <link rel = "stylesheet" href="/styles.css">
+    <title>Results</title>
+</head>
+<body>
+    <div class="display">
+        <p><a href="/">New search</a> | <a href="/history">History</a></p>
+        <% if (error) { %>
+            <h2><%= error %></h2>
+        <% } else { %>
+            <h2><%= entry.artist %> - <%= entry.title %></h2>
+            <p><%= entry.lyrics %></p>
+            <p>Saved</p>
+        <% } %>
+        
+    </div>
+</body>
+</html>
