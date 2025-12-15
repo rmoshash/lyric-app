@@ -5,10 +5,10 @@ const portNumber = 7004;
 const bodyParser = require("body-parser");
 
 const mongoose = require("mongoose");
-require("dotenv").config({
-    path: path.resolve(__dirname, "credentialsDontPost/.env"),
- });
- 
+// require("dotenv").config({
+//     path: path.resolve(__dirname, "credentialsDontPost/.env"),
+// });
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.set("view engine", "ejs");
 app.set("views", path.resolve(__dirname, "templates"));
