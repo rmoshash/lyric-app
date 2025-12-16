@@ -30,7 +30,7 @@ router.post("/lyrics", async (req, res) => {
     } catch (err) {
         res.status(err.response.status)
         res.render("result", {
-            error: MessageChannel,
+            error: err.message,
             entry: null
         });
     }
