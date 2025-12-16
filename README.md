@@ -1,4 +1,4 @@
-Submitted by: Raha Moshasha (rmoshash)
+Submitted by: Raha Moshasha (rmoshash) /n
 Group Members: Raha Moshasha (rmoshash)
 App Description: Allows users to find, and store song lyrics from artist name and song title. 
 YouTube video link: https://youtu.be/hZ3O-_1cLvk?si=Ik0EiuBx2vkBNLfY
