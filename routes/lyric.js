@@ -49,7 +49,7 @@ router.get("/history/:id", async (req,res)=>{
 
 router.post("/history/clear", async(req, res) =>{
     await LyricEntry.deleteMany({});
-    res.redirect("/index")
+    res.redirect("/")
 });
 
 module.exports = router;
