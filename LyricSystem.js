@@ -8,6 +8,7 @@ const mongoose = require("mongoose");
 // require("dotenv").config({
 //     path: path.resolve(__dirname, "credentialsDontPost/.env"),
 // });
+app.use(express.static("css"))
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.set("view engine", "ejs");
